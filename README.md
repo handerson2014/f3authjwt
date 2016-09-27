@@ -12,14 +12,11 @@ Example:
 	
 	Your Client Model:
 
-		AUTHENTICATION_TYPES = ['Basic', 'Bearer']
-
 		class Client(ndb.Model):
 		    name = ndb.StringProperty(required=True)
 		    client_id = ndb.StringProperty()
 		    client_secret = ndb.StringProperty()
 		    urls_white_list = ndb.StringProperty(repeated=True)
-		    authentication_type = ndb.StringProperty(choices=AUTHENTICATION_TYPES, default="basic")
 		    verify_expiration = ndb.BooleanProperty(default=False)
 
 	 the auth_jwt_settings.json:
