@@ -1,0 +1,18 @@
+{
+	"Bearer": {
+		"ClientApp": {
+	        "Model": "Portal",
+	        "Fields": {
+	            "ClientId": "client_id",
+	            "Secret": "client_secret",
+	            "UrlsWhiteList": "urls_white_list",
+	            "VerifyExpiration": "verify_expiration",
+	            "VerifySignature": "verify_signature"
+	        }
+	    }
+	},
+	"Basic": {
+		"User": "user",
+		"Password": "password"
+	}
+}
