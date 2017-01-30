@@ -14,7 +14,6 @@ class BasiAuthentication:
 
     def verify(self, token):
         """Execute auth."""
-        token = "%s:%s" % ()
         decoded = base64.b64decode(token)
         values = decoded.split(":")
         if len(values) == 2:
